@@ -1,2 +1,0 @@
-/home/dev/emsdk/upstream/emscripten/em++ -O3 -DNDEBUG  -s TOTAL_MEMORY=67108864 -s ENVIRONMENT=web -s SDL2_IMAGE_FORMATS=['jpg'] --shell-file /home/dev/eclipse-workspace/yarmico2/emscripten-shell.html -s 'EXTRA_EXPORTED_RUNTIME_METHODS=["addRunDependency", "removeRunDependency"]' @CMakeFiles/yarmico2.dir/objects1.rsp -o yarmico2.html @CMakeFiles/yarmico2.dir/linklibs.rsp
-
