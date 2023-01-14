@@ -1,0 +1,305 @@
+Archive member included       because of file (symbol)
+
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(symusr.o)
+                              yar_NY.o (GsDRAWENV)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(video.o)
+                              yar_NY.o (SetVideoMode)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o)
+                              yar_NY.o (exit)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef1.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_ramsize)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef2.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_stacksize)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef3.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_sp)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef4.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_fp)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef5.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_gp)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef6.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_heapbase)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef7.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_heapsize)
+\psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef8.o)
+                              \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o) (_sys_init_bss_flag)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_TPAGE01           0x24              yar_NY.o
+g_yarmico_game_time
+                    0x4               yar_API.o
+g_yarmico_controller_dpad
+                    0x1               yar_API.o
+g_yarmico_screen_rect
+                    0x10              yar_API.o
+g_yarmico_controller_analog_sticks
+                    0x10              yar_API.o
+g_current_level     0x4               game.o
+g_SET_BGM_VOL       0x1               yar_API.o
+g_player_bullets    0x800             game.o
+g_stereo_counter_random
+                    0x4               yar_API.o
+g_gems              0x8ca0            game.o
+g_yarmico_tilemap_camera_x
+                    0x4               yar_API.o
+g_player            0x48              game.o
+g_yarmico_collision_test_h
+                    0x4               yar_API.o
+g_yarmico_background_color_green
+                    0x1               yar_API.o
+g_gameloop_function
+                    0x4               yar_API.o
+bb0                 0x4               yar_NY.o
+g_dpad              0x4               yar_NY.o
+g_yarmico_background_color_blue
+                    0x1               yar_API.o
+g_yarmico_tilemap_camera_y
+                    0x4               yar_API.o
+g_yarmico_collision_test_item_ptr
+                    0x4               yar_API.o
+g_explosions        0x140             game.o
+g_SET_SFX_VOL       0x1               yar_API.o
+g_yarmico_collision_test_x
+                    0x4               yar_API.o
+g_TPAGE00           0x24              yar_NY.o
+g_bots_bullets      0x800             game.o
+bb1                 0x4               yar_NY.o
+g_yarmico_frame_counter
+                    0x4               yar_API.o
+g_game_frame_counter
+                    0x4               game.o
+g_yarmico_lores_upscale
+                    0xc               yar_API.o
+Packet_Memory       0x1f400           yar_NY.o
+g_OT_POS_CNT        0x4               yar_NY.o
+g_yarmico_controller_special_buttons
+                    0x1               yar_API.o
+g_bots              0x6270            game.o
+TableArray          0x80000           yar_NY.o
+g_button_press_time
+                    0x4               game.o
+g_yarmico_collision_test_y
+                    0x4               yar_API.o
+g_yarmico_background_color_red
+                    0x1               yar_API.o
+g_yarmico_controller_action_buttons
+                    0x1               yar_API.o
+g_yarmico_collision_test_w
+                    0x4               yar_API.o
+g_CurrentBuffer     0x4               yar_NY.o
+g_TableHeader       0x28              yar_NY.o
+g_yarmico_pico_play_sound
+                    0x24              yar_API.o
+g_game_controller_timer
+                    0x4               game.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x8011d9ff
+LOAD yar_NY.o
+LOAD yar_API.o
+LOAD game.o
+LOAD \psx3\mips-unknown-ecoff\lib/libsngcc.a
+LOAD \psx3\mips-unknown-ecoff\lib/libps.a
+LOAD \psx3\mips-unknown-ecoff\lib/libsngcc.a
+                0xa8010000                .=0xa8010000
+
+.text           0x8011d9ff     0x5781
+                0x8011d9ff                _ftext=.
+ *(.init)
+                0x8011d9ff                eprol=.
+ *(.text)
+ *fill*         0x8011d9ff        0x1
+ .text          0x8011da00     0x2650 yar_NY.o
+                0x8011fe24                RenderFinish
+                0x8011f5d0                random
+                0x8011fc14                yarmico_tilemap_get_next_level
+                0x8011fa4c                yarmico_BGM_quiet
+                0x8011de04                InitSprite
+                0x8011da00                yarmico_save_data
+                0x8011fab0                yarmico_tilemap_init
+                0x8011fa8c                yarmico_stop_all_SFX
+                0x8011e150                InitialiseGraphics
+                0x8011f724                yarmico_play_pico_sound_platform
+                0x8011ff48                SoundClose
+                0x8011fa44                yarmico_play_BGM_audio
+                0x8011f780                yarmico_load_data
+                0x8011e854                init
+                0x8011dfc8                RenderPrepare
+                0x8011ee6c                main
+                0x8011f9d4                yarmico_play_SFX
+                0x8011e3f0                yarmico_sprite
+                0x8011e2b4                RenderClear
+                0x8011fbe4                yarmico_tilemap_get_cell
+                0x8011e710                exit_to_siocons
+                0x8011f8e8                yarmico_rectangle
+                0x8011f0b8                display_netyaroze_title_screen
+                0x8011fea4                _error
+                0x8011fce0                LoadTexture
+                0x8011f8b0                yarmico_delete_data
+                0x8011efa8                yarmico_process_controller
+                0x8011ffb8                mix
+                0x8011fed4                SoundInit
+ .text          0x80120050      0xba0 yar_API.o
+                0x80120270                yarmico_play_pico_sound
+                0x80120050                tilemap_draw
+                0x80120bb4                swap
+                0x80120444                yarmico_do_C64_loading_screen
+                0x80120b48                intern_PSX_calc_percent
+                0x801207c4                yarmico_render_text
+                0x80120a9c                intern_black_and_white_BG
+                0x801205f4                _qsort
+                0x80120a60                yarmico_update_time
+ .text          0x80120bf0     0x2390 game.o
+                0x80122b48                game_update
+                0x80122b1c                game_deinit
+                0x80122e04                game_screen_clear
+                0x80121174                display_explosion
+                0x80122cc8                icos
+                0x801224e4                gameloop_start_screen
+                0x80120e54                display_gems
+                0x80122b6c                gameloop_dead_screen
+                0x8012168c                display_bullet
+                0x80122780                yarmico2_init
+                0x80122c74                isin
+                0x8012199c                gameloop_game
+                0x801212a4                display_bot
+                0x80120d08                explosion_add
+                0x80122d24                display_UI
+                0x80120bf0                bullet_add_player
+                0x80122b24                game_init
+                0x80122288                gameloop_won_screen
+                0x80122e24                game_save
+                0x80122ef0                game_load
+ .text          0x80122f80       0x40 \psx3\mips-unknown-ecoff\lib/libsngcc.a(video.o)
+                0x80122f80                SetVideoMode
+ .text          0x80122fc0      0x1c0 \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o)
+                0x8012316c                __main
+                0x80122fc0                _start
+                0x8012315c                exit
+                0x80123180                PROVIDE (__runtime_reloc_start, .)
+ *(.rel.sdata)
+                0x80123180                PROVIDE (__runtime_reloc_stop, .)
+ *(.fini)
+                0x80123180                etext=.
+                0x80123180                _etext=.
+                0x80123180                .=.
+
+.rdata          0x80123180      0xa20
+ *(.rdata)
+ .rdata         0x80123180      0x740 yar_NY.o
+ .rdata         0x801238c0       0x80 yar_API.o
+ .rdata         0x80123940      0x260 game.o
+                0x80123940                sintbl
+                0x80123ba0                _fdata=ALIGN(0x10)
+
+.data           0x80123ba0      0x190
+ *(.data)
+ .data          0x80123ba0       0x10 yar_NY.o
+                0x80123ba0                g_box
+ .data          0x80123bb0       0x30 game.o
+                0x80123bb0                g_yarmico_maps
+ .data          0x80123be0      0x150 \psx3\mips-unknown-ecoff\lib/libsngcc.a(startup.o)
+                0x8012bd30                _gp=(ALIGN(0x10)+0x8000)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata          0x80123d30       0xb0
+ *(.sdata)
+ .sdata         0x80123d30       0x20 yar_NY.o
+                0x80123d34                g_memcard_filename
+                0x80123d30                g_random
+ .sdata         0x80123d50       0x10 game.o
+ .sdata         0x80123d60       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef1.o)
+                0x80123d60                _sys_ramsize
+ .sdata         0x80123d70       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef2.o)
+                0x80123d70                _sys_init_stacksize
+ .sdata         0x80123d80       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef3.o)
+                0x80123d80                _sys_init_sp
+ .sdata         0x80123d90       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef4.o)
+                0x80123d90                _sys_init_fp
+ .sdata         0x80123da0       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef5.o)
+                0x80123da0                _sys_init_gp
+ .sdata         0x80123db0       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef6.o)
+                0x80123db0                _sys_init_heapbase
+ .sdata         0x80123dc0       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef7.o)
+                0x80123dc0                _sys_init_heapsize
+ .sdata         0x80123dd0       0x10 \psx3\mips-unknown-ecoff\lib/libsngcc.a(stdef8.o)
+                0x80123dd0                _sys_init_bss_flag
+                0x80123de0                edata=.
+                0x80123de0                _edata=.
+                0x80123de0                _fbss=.
+
+.sbss           0x80123de0       0x80
+ *(.sbss)
+ *(.scommon)
+ .scommon       0x80123de0       0x14 yar_NY.o
+                0x80123de0                bb0
+                0x80123de4                g_dpad
+                0x80123de8                bb1
+                0x80123dec                g_OT_POS_CNT
+                0x80123df0                g_CurrentBuffer
+ *fill*         0x80123df4        0xc
+ .scommon       0x80123e00       0x44 yar_API.o
+                0x80123e00                g_yarmico_game_time
+                0x80123e04                g_yarmico_controller_dpad
+                0x80123e05                g_SET_BGM_VOL
+                0x80123e08                g_stereo_counter_random
+                0x80123e0c                g_yarmico_tilemap_camera_x
+                0x80123e10                g_yarmico_collision_test_h
+                0x80123e14                g_yarmico_background_color_green
+                0x80123e18                g_gameloop_function
+                0x80123e1c                g_yarmico_background_color_blue
+                0x80123e20                g_yarmico_tilemap_camera_y
+                0x80123e24                g_yarmico_collision_test_item_ptr
+                0x80123e28                g_SET_SFX_VOL
+                0x80123e2c                g_yarmico_collision_test_x
+                0x80123e30                g_yarmico_frame_counter
+                0x80123e34                g_yarmico_controller_special_buttons
+                0x80123e38                g_yarmico_collision_test_y
+                0x80123e3c                g_yarmico_background_color_red
+                0x80123e3d                g_yarmico_controller_action_buttons
+                0x80123e40                g_yarmico_collision_test_w
+ *fill*         0x80123e44        0xc
+ .scommon       0x80123e50       0x10 game.o
+                0x80123e50                g_current_level
+                0x80123e54                g_game_frame_counter
+                0x80123e58                g_button_press_time
+                0x80123e5c                g_game_controller_timer
+
+.bss            0x80123e60    0xaf590
+ *(.bss)
+ *(COMMON)
+ COMMON         0x80123e60    0x9f488 yar_NY.o
+                0x80123e60                g_TPAGE01
+                0x80123e90                g_TPAGE00
+                0x80123ec0                Packet_Memory
+                0x801432c0                TableArray
+                0x801c32c0                g_TableHeader
+ *fill*         0x801c32e8        0x8
+ COMMON         0x801c32f0       0x54 yar_API.o
+                0x801c32f0                g_yarmico_screen_rect
+                0x801c3300                g_yarmico_controller_analog_sticks
+                0x801c3310                g_yarmico_lores_upscale
+                0x801c3320                g_yarmico_pico_play_sound
+ *fill*         0x801c3344        0xc
+ COMMON         0x801c3350    0x100a0 game.o
+                0x801c3350                g_player_bullets
+                0x801c3b50                g_gems
+                0x801cc7f0                g_player
+                0x801cc840                g_explosions
+                0x801cc980                g_bots_bullets
+                0x801cd180                g_bots
+                0x801d33f0                end=.
+                0x801d33f0                _end=.
+OUTPUT(main.exe ecoff-littlemips)

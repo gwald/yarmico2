@@ -1,0 +1,23 @@
+CC=gcc
+#-Wall -Werror  -O2   
+CFLAGS  = -w -O2 -D_RELEASE_  -funsigned-char 
+LINKER  =  -Xlinker -Map -Xlinker mapfile.dos -Xlinker -Ttext -Xlinker 8011d9ff
+PROG    =   main.exe
+OBJS    =   yar_NY.o  yar_API.o game.o 
+all: $(PROG)
+
+$(PROG): $(OBJS)	
+	$(CC) $(LINKER) $(OBJS) -o $@
+	strip $(PROG)
+#	pause
+
+# compile and generate dependency info
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+
+clean:
+	del $(PROG)
+	del *.o
+	del psx.exe 
+

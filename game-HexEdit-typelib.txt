@@ -1,0 +1,14 @@
+typedef unsigned byte  u8;
+typedef unsigned word  u16;
+typedef unsigned dword u32;
+typedef unsigned qword u64;
+typedef signed byte s8;
+typedef signed word s16;
+typedef signed dword  s32;
+typedef signed qword  s64;
+typedef float  f32;
+typedef double f64;
+typedef struct{	u32 tile_cell_u;	u32 tile_cell_v;	u8 tile_mapcode;  }CELLDATA;
+[export]
+struct LEVELS
+{ u8 numb[4];u32 MapNumber;u8 widt[4];u32 MapWidth;u8 heigh[4];u32 MapHeight;u8 datastr[4];CELLDATA lvl1[1800];u8 end1[4];CELLDATA lvl2[1800];u8 end2[4];CELLDATA lvl3[1800];u8 end3[4];};struct LEVELS LVLS;
