@@ -1,2 +1,33 @@
 # yarmico2
 Net Yaroze and Picosystem = Yarmico2
+
+/*
+ *
+ PUBLIC DOMAIN 2022
+ THIS CODE IS A HACKY MESS - READ IT AT YOUR OWN RISK!
+ https://github.com/gwald/yarmico
+ *
+ */
+
+pixelart from 32blit SDK by https://s4m-ur4i.itch.io/
+
+Yarmico2  Nov 11 to Jan 13
+Made for Net Yaroze game jam 2022
+
+Warning - Turn down your audio before starting!
+
+Instructions:
+Get the green gems, shoot the bots, clear the room and win!
+
+
+left, right, up, down =  movement
+Face buttons = shoot directs
+
+Keyboard controls:
+s = left
+e = up
+d = down
+f = right
+
+Net Yaroze hit select to zoom in/out
+
