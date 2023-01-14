@@ -1,10 +1,10 @@
 title: yarmico2
-description: Stop the dropping things
+description: Scrolln and Trolln
 author: yarmico2
 splash:
   file: assets/yarmico-image.png
 icon:
   file: assets/yarmico-icon.png
 version: v1.0.0
-url: https://github.com/gwald/yarmico
+url: https://github.com/gwald/yarmico2
 category: game
