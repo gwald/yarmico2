@@ -1,7 +1,7 @@
 # yarmico2
 Net Yaroze and Picosystem = Yarmico2
 
- PUBLIC DOMAIN 2022
+ PUBLIC DOMAIN 2023
 
 THIS CODE IS A HACKY MESS - READ IT AT YOUR OWN RISK!
 
@@ -22,15 +22,20 @@ Instructions:
 Get the green gems, shoot the bots, clear the room and win!
 
 left, right, up, down =  movement
-Face buttons = shoot directs
 
-Keyboard controls:
+Face buttons = shoot directions
+
+Keyboard 
+
+Movement controls:
+
 s = left
 e = up
 d = down
 f = right
 
 Shoot controls:
+
 j = left
 i = up
 k = down
