@@ -5,7 +5,7 @@ Net Yaroze and Picosystem = Yarmico2
 
 THIS CODE IS A HACKY MESS - READ IT AT YOUR OWN RISK!
 
-https://github.com/gwald/yarmico
+https://github.com/gwald/yarmico2
 
 pixelart from 32blit SDK by https://s4m-ur4i.itch.io/
 
