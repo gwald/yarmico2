@@ -13,6 +13,11 @@ Yarmico2  Nov 11 to Jan 13
 Made for Net Yaroze game jam 2022
 http://netyaroze.com/Community/Net-Yaroze-Game-Jam-2022
 
+Tilestudio was used to create the .tsp files, which holds the art and generated the map:
+tilestudio.sourceforge.net
+
+
+
 Instructions:
 Get the green gems, shoot the bots, clear the room and win!
 
