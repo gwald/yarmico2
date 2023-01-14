@@ -1,0 +1,97 @@
+; --------------------------------------------------------
+; NYGJAM22
+; --------------------------------------------------------
+
+;From: https://web.archive.org/web/20030212205842/http://www.cs.kun.nl/is/ts/
+;TUT video: https://www.youtube.com/watch?v=rrSc7mG4aHw
+;
+; --------------------------------------------------------
+; Tile Studio Definition for use with the Netyaroze PSX
+; --- bitmap file ----------------------------------------
+
+; Bitmaps are saved in a subdirectory named "gfx\".
+; 
+; All bitmaps need to be converted to TIM file using sony PSX 
+; tools (Timtools 3) and positioned correctly in VRAM
+; // #tilebitmap gfx\\<TileSetIdentifier>.bmp 256
+; 
+
+
+
+#tileset
+!ExportDuplicateTiles
+!StartWithEmptyTile
+#tilebitmap <TileSetIdentifier>.png 128
+#end tilebitmap
+ 
+
+; --- c file ---------------------------------------------
+
+; This file should be included in the source code.
+
+#file TS_<ProjectName>.inc
+
+// <CurrentDate>
+//<ProjectName> <Author> <Copyright> TS:<TSVersion> 
+// export to: <OutputDir>
+// tiles <TileCount> - must be less the u8 to use in map
+
+
+; not needed ##include "yarmico_config.h" // for YARMICO_TILEMAP_TPAGE
+
+
+
+
+
+
+yarmico_tilemap_t g_yarmico_maps  = 
+{
+	
+#list "HEADER" "" " \n" ""
+<Item>
+#end list
+ 
+};
+
+
+#end tileset
+
+
+
+#end file
+
+
+
+
+
+
+
+#binfile levels.bin 8
+
+#tileset
+
+#map
+; 4byte header
+;"MAP"
+; <MapNumber:"8">
+
+; WxH
+#mapdata
+<TileNumber:"8">
+<TileNumber:"8">
+<MapCode:"8">
+#end mapdata
+#end map
+
+#end tileset
+"EOF"
+
+#end binfile
+
+
+
+
+
+; --------------------------------------------------------
+;!runcmdline
+;"C:\Documents and Settings\NetYaroze\Desktop\NY-demos\scrolla-yaroze\PSX.bat"
