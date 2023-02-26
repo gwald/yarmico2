@@ -719,7 +719,7 @@ void InitialiseGraphics (void)
 			else //120 to 256 width
 			{
 
-				g_yarmico_lores_upscale[0] = 8704; //fixed point scale factor 120×2.133333   =255.99996  4096×2.133333  = 8738.131968 - 8704%32=0
+				g_yarmico_lores_upscale[0] = 8704; //fixed point scale factor 120Ã—2.133333   =255.99996  4096Ã—2.133333  = 8738.131968 - 8704%32=0
 				g_yarmico_lores_upscale[1] = 0;
 				g_yarmico_lores_upscale[2] = 0;
 			}
@@ -2272,7 +2272,7 @@ int main(char **argv,int argc)
 					else //120 to 256 width
 					{
 
-						g_yarmico_lores_upscale[0] = 8704; //fixed point scale factor 120×2.133333   =255.99996  4096×2.133333  = 8738.131968 - 8704%32=0
+						g_yarmico_lores_upscale[0] = 8704; //fixed point scale factor 120Ã—2.133333   =255.99996  4096Ã—2.133333  = 8738.131968 - 8704%32=0
 						g_yarmico_lores_upscale[1] = 0;
 						g_yarmico_lores_upscale[2] = 0;
 					}
@@ -2631,6 +2631,9 @@ void display_netyaroze_title_screen(u32 TIM_address)
 	LOG_MAIN("\n( *((volatile u32 *)GPUSTAT_REG) ) %X\n", g_yarmico_game_time);
 	LOG_MAIN("\nReg_GPUSTAT %X\n", g_yarmico_game_time);
 
+	ResetGraph(0);
+	GsDefDispBuff( 0, 0, 0, 0 );
+	
 	if(g_yarmico_game_time == 'E') // if E, it's PAL
 	{
 
@@ -2674,6 +2677,9 @@ void display_netyaroze_title_screen(u32 TIM_address)
 
 
 
+	GsClearOt(0,0,&g_TableHeader[0]);
+	GsClearOt(0,0,&g_TableHeader[1]);
+	
 	// splash screens
 	{
 
