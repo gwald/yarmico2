@@ -2632,7 +2632,7 @@ void display_netyaroze_title_screen(u32 TIM_address)
 	LOG_MAIN("\nReg_GPUSTAT %X\n", g_yarmico_game_time);
 
 	ResetGraph(0);
-	GsDefDispBuff( 0, 0, 0, 0 );
+        // causes crash on HW  GsDefDispBuff( 0, 0, 0, 0 );
 	
 	if(g_yarmico_game_time == 'E') // if E, it's PAL
 	{
@@ -2700,7 +2700,8 @@ void display_netyaroze_title_screen(u32 TIM_address)
 		title.scalex =  (signed short) 10240; //4096*2.5;
 		title.scaley =  (signed short) 7496; //4096+3400;
 
-
+		
+		DrawSync(0);
 
 		//fade in
 		//if(0)
@@ -2716,9 +2717,9 @@ void display_netyaroze_title_screen(u32 TIM_address)
 
 
 			//	render_text(8, 180, 100, (char *)"- MAJOR SEIZURE AND LANGUAGE WARNING -");
-
-			RenderFinish();
 			DrawSync(0);
+			RenderFinish();
+			
 		}while(g_yarmico_game_time++ < YARMICO_TITLE_BRIGHTNESS_LEVEL); // mid brightness
 
 		LOG_MAIN("DISPLAY_NY_TITLE start finished }while(g_yarmico_game_time++ < 128); \n");
@@ -2736,9 +2737,9 @@ void display_netyaroze_title_screen(u32 TIM_address)
 
 
 			//	render_text(8, 180, 100, (char *)"- MAJOR SEIZURE AND LANGUAGE WARNING -");
-
-			RenderFinish();
 			DrawSync(0);
+			RenderFinish();
+			
 
 		}while(g_yarmico_game_time++ < YARMICO_TITLE_HOLD_COUNT);
 
@@ -2755,9 +2756,10 @@ void display_netyaroze_title_screen(u32 TIM_address)
 			GsSortSprite( &title,&g_TableHeader[g_CurrentBuffer],OT_POS_SPRITE-g_OT_POS_CNT);	// register the sprite in the ordering table
 
 			//render_text(8, 180, 100, (char *)"- MAJOR SEIZURE AND LANGUAGE WARNING -");
-
-			RenderFinish();
+			
 			DrawSync(0);
+			RenderFinish();
+
 		}while(g_yarmico_game_time++ < YARMICO_TITLE_BRIGHTNESS_LEVEL);
 
 
